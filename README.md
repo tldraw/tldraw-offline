@@ -1,10 +1,15 @@
-# tldraw desktop
+# tldraw offline
 
-A desktop editor for `.tldr` files, built with [tldraw](https://tldraw.dev) and Electron.
+A desktop application for tldraw’s infinite canvas. Built with [tldraw](https://tldraw.dev) and Electron.
+
+It is:
+Local. Everything lives on your machine, no internet needed.
+File-based. Save, back-up, and share any file you’re working on.
+Dangerous. Your agent can read, edit, and script on your canvas.
 
 ## Download
 
-Get the latest release from the [Releases page](https://github.com/tldraw/tldraw-desktop/releases/latest).
+Get the latest release from [offline.tldraw.com](https://offline.tldraw.com/) the [Releases page](https://github.com/tldraw/tldraw-desktop/releases/latest).
 
 | Platform | Download |
 | --- | --- |
@@ -14,74 +19,27 @@ Get the latest release from the [Releases page](https://github.com/tldraw/tldraw
 | Linux x64 | `tldraw-{version}-linux-x64.AppImage` or `.deb` |
 | Linux ARM64 | `tldraw-{version}-linux-arm64.AppImage` |
 
+## Usage
+
+tldraw offline is a desktop application that you can use to make diagrams, whiteboards, notes, and more. The files you create are saved as .tldraw files. You can draw pictures, add images, embed websites, and more.
+
+If you already know about [tldraw.com](https://www.tldraw.com), then tldraw offline is very similar, except that it is an offline, file-based, single-player experience. If you want a free hosted product, use [tldraw.com](https://www.tldraw.com).
+
+## Danger
+
+The application is designed to work with AI agents such as OpenAI’s Codex, Anthropic’s Claude, and coding harnesses such as Pi, OpenCode, and any other. These AI agents can write scripts that will run when a file is opened as well as query, screenshot, or script inject the running application through a local server.
+
+Use the dangerous power of tldraw offline to **create unusual experiences.**
+
+## More
+
+Read the release notes on [GitHub](https://github.com/tldraw/tldraw-desktop/releases). Join the [Discord](https://discord.tldraw.com/). Follow [tldraw on Twitter/X](https://x.com/tldraw).
+
+Build your own **canvas application** with the [tldraw SDK](https://tldraw.dev/).
+
 ## Auto-updates
 
 The app checks for updates on launch. When a new version is available, you'll be prompted to download and install it.
-
-## Local Canvas API
-
-The desktop app runs a local HTTP server that exposes a Canvas API for programmatic access to your tldraw documents. This enables integrations with AI coding assistants and other tools.
-
-The server starts automatically when the app launches (default port 7236, falls back to a random port if taken). Connection details are written to:
-
-- **macOS**: `~/Library/Application Support/tldraw/server.json`
-- **Windows**: `%APPDATA%/tldraw/server.json`
-- **Linux**: `~/.config/tldraw/server.json`
-
-The `server.json` file contains:
-
-```json
-{
-  "port": 7236,
-  "pid": 12345
-}
-```
-
-### API endpoints
-
-| Method | Endpoint | Description |
-| --- | --- | --- |
-| `GET` | `/` | API documentation (plain text) |
-| `GET` | `/api/llms` | tldraw SDK documentation (llms-full.txt) |
-| `GET` | `/api/doc` | List all open documents (supports `?name=` filter) |
-| `GET` | `/api/doc/:id/shapes` | Get all shapes on the current page |
-| `GET` | `/api/doc/:id/screenshot` | Screenshot of the canvas as JPEG |
-| `POST` | `/api/doc/:id/exec` | Execute arbitrary editor code |
-| `POST` | `/api/doc/:id/actions` | Execute structured canvas actions |
-
-### Screenshots
-
-`GET /api/doc/:id/screenshot` supports query parameters:
-
-- `size` - `small` (768px), `medium` (1536px), `large` (3072px), `full` (5000px)
-- `bounds` - Crop to specific area: `bounds=x,y,w,h`
-
-### Actions
-
-`POST /api/doc/:id/actions` accepts a JSON body with an `actions` array. Each action has a `_type` field:
-
-`create`, `update`, `delete`, `clear`, `move`, `place`, `label`, `align`, `distribute`, `stack`, `bringToFront`, `sendToBack`, `resize`, `rotate`, `pen`, `setMyView`
-
-### Example usage
-
-```bash
-# Read server connection info
-cat ~/Library/Application\ Support/tldraw/server.json
-
-# List open documents
-curl http://localhost:7236/api/doc
-
-# Get shapes from a document
-curl http://localhost:7236/api/doc/{id}/shapes
-
-# Take a screenshot
-curl http://localhost:7236/api/doc/{id}/screenshot?size=medium -o screenshot.jpg
-
-# Execute editor code
-curl -X POST http://localhost:7236/api/doc/{id}/exec \
-  -H 'Content-Type: application/json' \
-  -d '{"code": "return editor.getCurrentPageShapeIds().size"}'
-```
 
 ## Development
 
