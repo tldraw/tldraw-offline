@@ -9,7 +9,7 @@ Dangerous. Your agent can read, edit, and script on your canvas.
 
 ## Download
 
-Get the latest release from [offline.tldraw.com](https://offline.tldraw.com/) the [Releases page](https://github.com/tldraw/tldraw-desktop/releases/latest).
+Get the latest release from [offline.tldraw.com](https://offline.tldraw.com/) or [Releases page](https://github.com/tldraw/tldraw-desktop/releases/latest).
 
 | Platform | Download |
 | --- | --- |
