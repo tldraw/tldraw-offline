@@ -1,13 +1,15 @@
 
+<div align="center">
 <img height="52" alt="image" src="https://github.com/user-attachments/assets/a1bba458-a804-4dbe-b950-58917aa59047" />
+  <br><br>
+<img height="600" alt="image" src="https://github.com/user-attachments/assets/0c33c884-3b43-45b5-9e0e-77673b1306f0" />
+</div>
 
 # tldraw offline
 
 A local whiteboard for you and your agents.
 
 tldraw offline is a desktop application for drawing, diagramming, whiteboarding, and more on [tldraw's infinite canvas](https://tldraw.com). There are no accounts or servers, and the app works without an internet connection. Your documents are saved as portable `.tldraw` files that you can keep private, back up, or share.
-
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/0c33c884-3b43-45b5-9e0e-77673b1306f0" />
 
 ## Download
 
