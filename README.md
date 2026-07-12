@@ -1,50 +1,54 @@
 # tldraw offline
 
-A desktop application for tldraw’s infinite canvas. Built with [tldraw](https://tldraw.dev) and Electron.
+A local whiteboard for you and your agents.
 
-It is:
-Local. Everything lives on your machine, no internet needed.
-File-based. Save, back-up, and share any file you’re working on.
-Dangerous. Your agent can read, edit, and script on your canvas.
+tldraw offline is a desktop application for drawing, diagramming, whiteboarding, and more on [tldraw's infinite canvas](https://tldraw.com). There are no accounts or servers, and the app works without an internet connection. Your documents are saved as portable `.tldraw` files that you can keep private, back up, or share.
 
 ## Download
 
-Get the latest release from [offline.tldraw.com](https://offline.tldraw.com/) or [Releases page](https://github.com/tldraw/tldraw-desktop/releases/latest).
+Download tldraw offline for macOS, Windows, or Linux at [offline.tldraw.com](https://offline.tldraw.com), or browse the [latest GitHub release](https://github.com/tldraw/tldraw-offline/releases/latest).
 
-| Platform | Download |
+| Platform | Available builds |
 | --- | --- |
-| macOS (Apple Silicon + Intel) | `tldraw-{version}-universal.dmg` |
-| Windows x64 | `tldraw-{version}-win-x64.exe` |
-| Windows ARM64 | `tldraw-{version}-win-arm64.exe` |
-| Linux x64 | `tldraw-{version}-linux-x64.AppImage` or `.deb` |
-| Linux ARM64 | `tldraw-{version}-linux-arm64.AppImage` |
+| macOS | Universal DMG for Apple silicon and Intel |
+| Windows | Installer for x64 or Arm64 |
+| Linux | AppImage for x64 or Arm64; Debian package for x64 |
 
-## Usage
+The app checks for updates when it starts. You can also check manually from the application menu.
 
-tldraw offline is a desktop application that you can use to make diagrams, whiteboards, notes, and more. The files you create are saved as .tldraw files. You can draw pictures, add images, embed websites, and more.
+## Get started
 
-If you already know about [tldraw.com](https://www.tldraw.com), then tldraw offline is very similar, except that it is an offline, file-based, single-player experience. If you want a free hosted product, use [tldraw.com](https://www.tldraw.com).
+1. Open tldraw offline and select **New file**.
+2. Draw, add text and media, or build a diagram on the canvas.
+3. Choose **File → Save** and select a name and location.
+4. Reopen the document from the Home screen, the application menu, or your file browser.
 
-## Danger
+Each document opens in its own window. tldraw offline automatically keeps working copies of open documents and can restore unsaved work after an unexpected exit, but recovery is not a replacement for saving and backing up your files.
 
-The application is designed to work with AI agents such as OpenAI’s Codex, Anthropic’s Claude, and coding harnesses such as Pi, OpenCode, and any other. These AI agents can write scripts that will run when a file is opened as well as query, screenshot, or script inject the running application through a local server.
+For installation instructions, file management, keyboard shortcuts, troubleshooting, and agent setup, read the [tldraw offline user manual](https://app.notion.com/p/tldraw/User-manual-39a3e4c324c080e7b2eacc5afd078e85?source=copy_link).
 
-Use the dangerous power of tldraw offline to **create unusual experiences.**
+## Local files
 
-## More
+`.tldraw` is the native and preferred file format. A file contains the canvas, its pages and stored media, and any embedded document script. Files work across macOS, Windows, and Linux.
 
-Read the release notes on [GitHub](https://github.com/tldraw/tldraw-desktop/releases). Join the [Discord](https://discord.tldraw.com/). Follow [tldraw on Twitter/X](https://x.com/tldraw).
+Legacy `.tldr` files can also be opened and exported. Opening one imports it as a new, unsaved document and leaves the original file unchanged.
 
-Build your own **canvas application** with the [tldraw SDK](https://tldraw.dev/).
+> [!IMPORTANT]
+> tldraw offline does not currently merge changes made to an open file by another program, sync client, Git operation, or computer. Close the document before replacing it externally, then reopen it.
 
-## Auto-updates
+## Bring your own AI
 
-The app checks for updates on launch. When a new version is available, you'll be prompted to download and install it.
+tldraw offline can work with coding agents such as [Codex](https://openai.com/codex/), [Claude Code](https://claude.com/product/claude-code), [Pi](https://github.com/badlogic/pi-mono), and [OpenCode](https://opencode.ai). An agent can inspect an open canvas, make changes, and create reusable document scripts that add new behavior to a file.
 
-## Development
+This is powerful by design. An agent with access to the app can read and edit your documents, and scripts stored in a `.tldraw` file can run when the file is opened. Only grant access to agents you trust and only open files from sources you trust. See the [user manual](https://app.notion.com/p/tldraw/User-manual-39a3e4c324c080e7b2eacc5afd078e85?source=copy_link) for setup and security details.
 
-Source code lives in the [`tldraw-internal`](https://github.com/tldraw/tldraw-internal) monorepo at `apps/public/desktop/`.
+## Learn more
+
+- Read the [user manual](https://app.notion.com/p/tldraw/User-manual-39a3e4c324c080e7b2eacc5afd078e85?source=copy_link)
+- Join the [tldraw Discord](https://discord.tldraw.com)
+- Follow [tldraw on X](https://x.com/tldraw)
+- Build your own canvas application with the [tldraw SDK](https://tldraw.dev)
 
 ## License
 
-This project is not open source. All rights reserved.
+tldraw offline is not open source. All rights reserved.
