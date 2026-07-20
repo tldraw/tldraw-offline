@@ -1,8 +1,8 @@
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldraw/tldraw-offline/raw/main/assets/tldraw-offline-dark.svg" />
-  <img height="52" alt="tldraw offline" src="https://github.com/tldraw/tldraw-offline/raw/main/assets/tldraw-offline-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldraw/tldraw-offline/raw/main/assets/logo-dark.svg" />
+  <img height="52" alt="tldraw offline" src="https://github.com/tldraw/tldraw-offline/raw/main/assets/logo-light.svg" />
 </picture>
   <br><br>
 <img height="600" alt="tldraw offline app" src="https://github.com/user-attachments/assets/0c33c884-3b43-45b5-9e0e-77673b1306f0" />
