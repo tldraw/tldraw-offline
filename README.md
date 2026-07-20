@@ -1,8 +1,11 @@
 
 <div align="center">
-<img height="52" alt="image" src="https://github.com/user-attachments/assets/a1bba458-a804-4dbe-b950-58917aa59047" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldraw/tldraw-offline/raw/main/assets/tldraw-offline-dark.svg" />
+  <img height="52" alt="tldraw offline" src="https://github.com/tldraw/tldraw-offline/raw/main/assets/tldraw-offline-light.svg" />
+</picture>
   <br><br>
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/0c33c884-3b43-45b5-9e0e-77673b1306f0" />
+<img height="600" alt="tldraw offline app" src="https://github.com/user-attachments/assets/0c33c884-3b43-45b5-9e0e-77673b1306f0" />
 </div>
 
 # tldraw offline
