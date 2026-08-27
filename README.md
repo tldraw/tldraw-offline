@@ -24,6 +24,12 @@ Download tldraw offline for macOS, Windows, or Linux at [offline.tldraw.com](htt
 | Windows | Installer for x64 or Arm64 |
 | Linux | AppImage for x64 or Arm64; Debian package for x64 |
 
+On macOS, you can also install tldraw offline with [Homebrew](https://brew.sh):
+
+```sh
+brew install --cask tldraw
+```
+
 The app checks for updates when it starts. You can also check manually from the application menu.
 
 ## Get started
