@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in the app isn't working as expected
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+
+        Please give the issue a short, plain-language title that describes the symptom — for example, "Cmd-M does not minimize on macOS". Technical detail and diagnosis are very welcome in the body below.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what you did, what you expected to happen, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you can make the bug happen again, list the steps. Screenshots or a screen recording help a lot.
+      placeholder: |
+        1. Open a document…
+        2. …
+    validations:
+      required: false
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Find it in the About dialog — "tldraw offline → About" on macOS, or "Help → About" on Windows and Linux.
+      placeholder: e.g. 1.15.0
+    validations:
+      required: true
+  - type: dropdown
+    id: release-channel
+    attributes:
+      label: Release channel
+      options:
+        - Stable
+        - Nightly
+        - Not sure
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows (x64)
+        - Windows (Arm)
+        - Linux (x86_64)
+        - Linux (Arm)
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: OS version, logs, error messages, or anything else that might help.
+    validations:
+      required: false
