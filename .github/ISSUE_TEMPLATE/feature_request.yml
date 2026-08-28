@@ -1,0 +1,15 @@
+name: Feature request
+description: Suggest a new feature or improvement
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a feature or improvement? We'd love to hear it!
+  - type: textarea
+    id: description
+    attributes:
+      label: What's the feature?
+      description: Describe the feature, the problem it solves, and any examples from other apps.
+    validations:
+      required: true
