@@ -54,7 +54,7 @@ Legacy `.tldr` files can also be opened and exported. Opening one imports it as 
 
 ## Bring your own AI
 
-tldraw offline can work with coding agents such as [Codex](https://openai.com/codex/), [Claude Code](https://claude.com/product/claude-code), [Pi](https://github.com/badlogic/pi-mono), and [OpenCode](https://opencode.ai). An agent can inspect an open canvas, make changes, and create reusable document scripts that add new behavior to a file.
+tldraw offline can work with coding agents such as [Codex](https://openai.com/codex/), [Claude Code](https://claude.com/product/claude-code), [Grok Build](https://x.ai/cli), [Pi](https://github.com/badlogic/pi-mono), and [OpenCode](https://opencode.ai). An agent can inspect an open canvas, make changes, and create reusable document scripts that add new behavior to a file.
 
 This is powerful by design. An agent with access to the app can read and edit your documents, and scripts stored in a `.tldraw` file can run when the file is opened. Only grant access to agents you trust and only open files from sources you trust. See the [user manual](https://tldraw.notion.site/User-manual-tldraw-offline-39a3e4c324c080e7b2eacc5afd078e85?pvs=74) for setup and security details.
 
