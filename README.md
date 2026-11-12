@@ -16,7 +16,7 @@ tldraw office is a desktop application for drawing, diagramming, whiteboarding, 
 
 ## Download
 
-Download tldraw office for macOS, Windows, or Linux at [offline.tldraw.com](https://offline.tldraw.com), or browse the [latest GitHub release](https://github.com/tldraw/tldraw-office/releases/latest).
+Download tldraw office for macOS, Windows, or Linux at [office.tldraw.com](https://office.tldraw.com), or browse the [latest GitHub release](https://github.com/tldraw/tldraw-office/releases/latest).
 
 | Platform | Available builds |
 | --- | --- |
@@ -41,7 +41,7 @@ The app checks for updates when it starts. You can also check manually from the 
 
 Each document opens in its own window. tldraw office automatically keeps working copies of open documents and can restore unsaved work after an unexpected exit, but recovery is not a replacement for saving and backing up your files.
 
-For installation instructions, file management, keyboard shortcuts, troubleshooting, and agent setup, read the [tldraw office user manual](https://tldraw.notion.site/User-manual-tldraw-offline-39a3e4c324c080e7b2eacc5afd078e85?pvs=74).
+For installation instructions, file management, keyboard shortcuts, troubleshooting, and agent setup, read the [tldraw office user manual](https://office.tldraw.com/docs).
 
 ## Local files
 
@@ -56,11 +56,11 @@ Legacy `.tldr` files can also be opened and exported. Opening one imports it as 
 
 tldraw office can work with coding agents such as [Codex](https://openai.com/codex/), [Claude Code](https://claude.com/product/claude-code), [Pi](https://github.com/badlogic/pi-mono), and [OpenCode](https://opencode.ai). An agent can inspect an open canvas, make changes, and create reusable document scripts that add new behavior to a file.
 
-This is powerful by design. An agent with access to the app can read and edit your documents, and scripts stored in a `.tldraw` file can run when the file is opened. Only grant access to agents you trust and only open files from sources you trust. See the [user manual](https://tldraw.notion.site/User-manual-tldraw-offline-39a3e4c324c080e7b2eacc5afd078e85?pvs=74) for setup and security details.
+This is powerful by design. An agent with access to the app can read and edit your documents, and scripts stored in a `.tldraw` file can run when the file is opened. Only grant access to agents you trust and only open files from sources you trust. See the [user manual](https://office.tldraw.com/docs) for setup and security details.
 
 ## Learn more
 
-- Read the [user manual](https://tldraw.notion.site/User-manual-tldraw-offline-39a3e4c324c080e7b2eacc5afd078e85?pvs=74)
+- Read the [user manual](https://office.tldraw.com/docs)
 - Join the [tldraw Discord](https://discord.tldraw.com)
 - Follow [tldraw on X](https://x.com/tldraw)
 - Build your own canvas application with the [tldraw SDK](https://tldraw.dev)
